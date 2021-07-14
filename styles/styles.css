@@ -79,3 +79,103 @@ header{
     width: 300px;
     height: 256px;
 }
+/* extra part-1 */
+.extra-1{
+    margin-left: 460px;
+    margin-right: 250px;
+    margin-top: 30px;
+}
+.extra-1 h2{
+    color: darkblue;
+    font-size: 30px;
+    margin-left: 200px;
+    margin-right: 50px;
+}
+.special_part{
+    background-image: linear-gradient(deepskyblue,dodgerblue);
+    margin-right: 250px;
+   
+}
+.photo-frame {
+    width: 500px;
+    height: 375px;
+    border: 3px solid blueviolet;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.photo-detail {
+    display: none;
+    position: absolute;
+    width: 500px;
+    top: 0;
+}
+
+.photo-detail h3 {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.photo-detail {
+    color: white;
+}
+
+.photo-frame:hover .photo-detail {
+    display: block;
+    background-color: rgba(219, 205, 168, 0.7);
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.5);
+    transition: transform 2s ease-in-out;
+}
+
+/* footer part */
+
+.last-part{
+    margin-left: 475px;
+    margin-right: 482px;
+    margin-top: 158px;
+    margin-bottom: 80px;
+}
+.pic img{
+    height: 110px;
+    width: 484px;
+}
+.social-logo{
+    margin-left: 157px;
+    margin-right: 157px;
+}
+.social-logo img{
+    height: 32px;
+    width: 32px;
+}
+.copyright{
+    margin-left: 124px;
+    margin-right: 124px;
+}
+
+/* media queries */
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .container, .heading, .extra-1, .last-part{
+        width: 100%;
+ 
+    }
+     .playesrs, .player, .head_part1, .banner, .special_part, .photo-frame, .pic, .social-logo, .copyright {
+         grid-template-columns: repeat(1, 1fr);
+     
+     }
+     .player, .head_part1, .banner, .special_part, .photo-frame, .pic, .social-logo, .copyright{
+         flex-direction: column;
+     }
+      
+ }
